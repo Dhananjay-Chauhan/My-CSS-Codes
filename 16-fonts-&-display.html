@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONTS AND DISPLAY</title>
+    <style>
+        .dip1{
+            display: inline; /* on using inline display the height and width will not matter.*/
+            height: 150px;
+            width: 200px;
+            background-color: rgb(139, 68, 112)
+        }
+        /* both the blocks need to be inline in order to make then side by side. */
+        .dip2{
+            display: inline;
+            background-color: rgb(60, 255, 0);
+            height: 242px;
+            width: 228px;
+            visibility: hidden; /* this statement makes the content disappear but the space held by the content is still reserved. */
+        }
+        .dip3{
+            display: inline-block;  /* the display which will be inline block  you can set height, width, padding and margin of it.*/ 
+            height: 250px;
+            width: 200px;
+            background-color: rgb(50, 11, 158);
+            padding: 20px;
+            margin: 50px;
+        }
+        .dip4{
+            display: inline;
+            background-color: rgb(255, 0, 0);
+            height: 248px;
+            width: 350px;
+            /* display: none; */ /*uncomment the code to see - display none vanishes the content without reserving the space.the content shifts accordingly */
+        }
+        .dip5{
+            /* display: inline; */
+            background-color: rgb(220, 20, 203);
+            height: 500px;
+            width: 1000px;
+            text-align: center;   /* aligns the text within the content box at the desired place */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="dip1">
+        lorem isoev vdsocod  <!-- dont ose paragraph tag in div otherwise while giving background color in css it will not show if inline diplay is also used.-->
+    </div>
+    <div class="dip2">
+                         Lorem ipsum dolor sit amet, consects mollitia beatae veniam quisquam blanditiis explicabo ab a
+    </div>
+    <div class="dip3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
+    </div>
+    <div class="dip4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ex aperi
+    </div>
+    <div class="dip5">
+        Lorem ipsum dolor sit amet.
+    </div>
+</body>
+</html>

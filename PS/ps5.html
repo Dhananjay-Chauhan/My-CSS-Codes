@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS-5</title>
+    <style>
+        /* to make sites responsive make sure to use vh and vw instead of pixeles */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{ /* making the */
+            position: sticky;
+            top: 0;
+           
+        }
+        .bar{
+            background-color: red;
+            text-align: center;
+            height: 10vh;
+            width: 100%;
+ 
+        }
+        .bar ul li{
+            display: inline;
+            margin-left: 5vw;   /* for for left and right margin use vw */
+            margin-right: 10vw; 
+            position: relative;
+            top: 4vh;
+            font-size: 1.5vw; /* for font size use vw */
+        }
+        .main{
+            height: 100vh;
+            width: 99.5vw;
+            background-image: url('Images/ringedcyclops.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+        .box{
+            
+            border: 5px solid yellowgreen;
+            box-sizing: border-box;
+            position: relative; /* relative position is needed to use the z-index. */
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bar">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Dhananjay</li>
+                    <li>Contact</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="box2x2">
+        <div class="box">
+            <div class="main">
+                <h1>
+                    Hello Amigoes !
+                </h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit placeat at cum ear Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore magnam illum eligendi molestias! Rem nobis laudantium ab sint ex natus, aliquam laborum minima quam veritatis quod maxime nulla voluptas doloremque autem praesentium ut labore unde, nemo fugiat accusamus tempore. Libero, ratione dignissimos aperiam nisi alias rem similique ea sed fugit? um repudiandae quo eaque atque aliquid corrupti officiis itaque, culpa a omnis alias?</p>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

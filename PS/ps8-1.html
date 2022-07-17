@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRESS BAR</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .progressbar{
+            background-color: blue;
+            height: 1vh;
+            animation: probar 3s ease-in  1 normal ;
+        }
+        header{
+            background-color: cadetblue;
+            height: 10vh;
+        }
+        .container{
+            background-color: darkkhaki;
+            height: 89vh;
+        }
+        @keyframes probar {
+            0%{
+                width: 0vw;
+            }
+            50%{
+                width: 60vw;
+            }
+            100%{
+                width: 100vw;
+            }
+            
+        }
+        .progressbar2{
+            background-color: rgb(206, 60, 145);
+            height: 12vh;
+            width: 2vw;
+            transition: width 3s ease-in 1s;
+        }
+        .progressbar2:hover{
+            width: 100vw;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="progressbar">
+        
+    </div>
+    <div class="progressbar2">
+        
+    </div>
+    <header>
+
+    </header>
+
+    <div class="container">
+        
+    </div>
+</body>
+</html>

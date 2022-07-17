@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFORMS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: rgb(155, 219, 179);
+            color: rgb(9, 92, 139);
+            height: 100vh;
+            width: 100vw;
+        }
+        .item1{
+            /* Specifies a translation by the given amount in the X direction. */
+            transform:translateX(100px);
+            /* Specifies a translation by the given amount in the Y direction. */
+            transform:translateY(100px);
+            /* either one of the translate will happen preferably one in  the last. */
+        }
+        .item2{
+            transform: translate(150px,150px);
+        }
+        .item3{
+            transform:rotate(0.5turn);
+        }
+        .item4{
+            transform: translate(100px,100px) rotate(45deg) ;
+        }
+        .item5{
+            transform: translate(50vw,50vh) rotate(0.25turn);
+            transform-origin: 0;
+        }
+        .item6{
+            transform:rotate(0.5turn);
+            transform-origin: 0;
+        }
+        .item7{
+            /* scale(4,6);  4-X , 6-Y */
+            /* can use scaleY or scale(x,y) */
+            transform: scaleX(2 ); 
+            border: 1px solid red;
+        }
+        .item8{
+            transform: skew(4deg,6deg);
+            transform-origin: 0;;
+        }
+        /*  for 3D transforms use rotateX rotateY rotateZ */
+        /* matrix() use MDN reference  */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            This is item -1 .
+        </div>
+        <div class="item2">
+            This is item - 2.
+        </div>
+        <div class="item3">
+            <span>This is item - 3 .</span>
+        </div>
+        <div class="item4">
+            This is item - 4 . Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero esse nesciunt sequi dolor, explicabo corrupti nam, inventore numquam ad, magnam unde voluptates deserunt.
+        </div>
+        <div class="item5">
+            <p> This is item -5 .</p>
+        </div>
+        <div class="item6">
+            This is item - 6.
+        </div>
+        <div class="item7">
+            <p>This is item - 7 . Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi aut veniam corrupti, quo sit atque tenetur molestias est quod, ut enim illo odit in molestiae. Esse aperiam odio officia hic molestias aspernatur laborum laboriosam, suscipit repellendus repudiandae quibusdam soluta doloribus temporibus reiciendis non, architecto error.</p> 
+        </div>
+        <br><br><br><br><br>
+        <div class="item8">
+            This is item - 8 . Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+
+</body>
+</html>

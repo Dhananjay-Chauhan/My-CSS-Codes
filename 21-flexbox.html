@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FLEXBOX </title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row; /* it gives the direction of the items in the containers */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+
+        /*  flex-wrap :: used to wrap the items in the container when the window is streched inwards   */
+            flex-wrap: wrap-reverse;
+            /* flex-wrap: wrap; */
+        }
+        .box1{
+            height: 350px;
+            width: 350px;
+            background-color: pink;
+            font-size: 50px;
+            border: 4px solid rgb(196, 58, 196);
+        }
+        .box2{
+            height: 350px;
+            width: 350px;
+            background-color: rgb(30, 204, 216);
+            font-size: 50px;
+            border: 4px solid rgb(74, 118, 211);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">BOX-1</div>
+        <div class="box1">BOX-2</div>
+        <div class="box2">BOX-3</div>
+        <div class="box2">BOX-4</div>
+    </div>
+</body>
+</html>

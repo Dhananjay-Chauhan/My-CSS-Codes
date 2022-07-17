@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONT-SIZE</title>
+    <style>
+        .parent{
+            font-size: 20px;
+        }
+        .child{
+            font-size: 2em; /* 2em means font size of child will be (2 x font-size of parent. this will work only in the case of parent child .. */
+        }
+        .parent1{
+            font-size: 20px;
+        }
+        /* html{
+            font-size: 50px;
+        } */
+        .child1{
+            font-size: 2rem; /* 2em means font size of child will be (2 x font-size of html. this will work only in the case of parent child .. */
+        }
+        .minmax{
+            background-color: skyblue;
+            height: 300vh;
+            width: 5vw;
+            min-width: 50vw;
+            max-height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        parent parent parent parent parent parent parent parent 
+        <div class="child">
+            child child child child child child child child child child child child child child child child child child 
+        </div>
+    </div>
+    <div class="parent1">
+        parent parent parent parent parent parent parent parent 
+        <div class="child1">
+            child child child child child child child child child child child child child child child child child child 
+        </div>
+    </div>
+    <div class="minmax">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laboriosam veritatis dolorum iste necessitatibus totam porro! Maiores dignissimos exercitationem sequi natus aliquid ipsum sint eveniet accusamus. Voluptatum ab iste ex illum nihil, consequatur repellendus ipsa placeat iure alias numquam voluptatem esse mollitia delectus nam incidunt accusamus dignissimos. Placeat libero facilis maiores totam eius quidem distinctio, voluptatem ut similique sint molestiae fugiat illum itaque earum deleniti commodi aliquid illo rerum, magni fuga sit ipsam consequuntur non. Ullam voluptates quasi, aliquam molestiae suscipit ea, nesciunt maxime consectetur nihil vitae quisquam quae! Quod, labore provident. Et omnis rem dolores iure facilis, eveniet blanditiis.
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSITIONS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: pink;
+            height: 50vh;
+
+        }
+        .box1 img{
+            height: 20vh;
+            width: 20vw;
+            /* proprty you eant t0 change */
+            transition-property: width;
+            /* duration of the animation */
+            transition-duration: 4s;
+            /* easinesss in displaying the function */
+            transition-timing-function: ease-in;
+            /* provides an delay before the actual animation kicks in. */
+            transition-delay: 3s;
+            /* ALL TRANSITION PROPERTIES CAN BE USED AT ONCE */
+            /* transition: width 4s ease-in 3s - write in the same order.  */
+            /* use MDN reference */
+            /* to set multiple properties: */
+            /* transition: width 4s ease-in 3s , height 1s ease-in-out */
+            /* if any poperty is ledt it will set automaticaly */
+            
+        }
+        .box1 img:hover{
+            width: 45vw;
+        }
+        .box2 img{
+            height: 20vh;
+            width: 20vw;
+            transition: width 1s ease-in  , height 2s ease-in-out
+            
+        }
+        .box2 img:hover{
+            width: 60vw;
+            height: 41vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img src="Images/bluenebula.jpg" alt="Loading">
+        </div>
+        <div class="box2">
+            <img src="Images/bluenebula.jpg" alt="Loading">
+        </div>
+    </div>
+</body>
+</html>
+                        

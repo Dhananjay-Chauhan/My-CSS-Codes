@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-size</title>
+    <style>
+        .good{
+            height: 450px; /* height and width are for the text and SPACE(NOT SURE BUT IN SOME CASES COVER AND CONTAIN GIVE EXCEPTIONS.) */
+            width: 450px;
+            background-image: url('Images/nightmoon.jpeg');
+            background-size: 120px 120px;
+            border: 2px solid red;
+            background-repeat: no-repeat;
+            background-position: center;  /* puts image in the center of the height and width area ie. centre of (450x450)px ..... not necessarily in the centre of text written.*/
+            color: rgb(45, 47, 167);    /* USE BORDER TAG FOR FINDING THE AREA OF THE BOX */
+        }
+        .bad{
+            height: 450px; /* height and width are for the text and SPACE(NOT SURE BUT IN SOME CASES COVER AND CONTAIN GIVE EXCEPTIONS.) */
+            width: 450px;
+            background-image: url('Images/nightmoon.jpeg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            color: rgb(45, 47, 167);
+        } 
+    </style>
+</head>
+<body>
+    <div class="good">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae molestias optio dolore sunt rerum cupiditate adipisci, dignissimos nisi illum velit doloribus perferendis voluptatum iste sed similique aspernatur odit atque aperiam ab? Veniam nam maxime, est soluta reiciendis animi eveniet sunt eius nemo? Optio non numquam quos debitis dignissimos, culpa laudantium pariatur, amet, qui itaque maxime iusto excepturi quidem minus ipsum nulla quasi nostrum vero mollitia laborum? Veritatis libero rerum et ab tenetur beatae autem, cumque natus? Earum dolorum rem voluptates possimus ex quasi porro expedita, perferendis enim consectetur error sit repudiandae voluptatem ipsum, libero, neque aspernatur. Obcaecati, quaerat rem? Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eaque repudiandae eveniet voluptatum debitis labore numquam architecto, fuga eum est deserunt doloremque dolores ea odit porro exercitationem molestias. Earum aliquam quos ducimus saepe optio, consequatur perspiciatis ad animi repudiandae! Corrupti reprehenderit ullam earum quas dolores quam, illo provident possimus recusandae. adipisicing elit. Magnam sapiente vero maxime nam totam velit? </p>
+    </div><br><br>
+    <div class="bad">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae molestias optio dolore sunt rerum cupiditate adipisci, dignissimos nisi illum velit doloribus perferendis voluptatum iste sed similique aspernatur odit atque aperiam ab? Veniam nam maxime, est soluta reiciendis animi eveniet sunt eius nemo? Optio non numquam quos debitis dignissimos, culpa laudantium pariatur, amet, qui itaque maxime iusto excepturi quidem minus ipsum nulla quasi nostrum vero mollitia laborum? Veritatis libero rerum et ab tenetur beatae autem, cumque natus? Earum dolorum rem voluptates possimus ex quasi porro expedita, perferendis enim consectetur error sit repudiandae voluptatem ipsum, libero, neque aspernatur. Obcaecati, quaerat rem? Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eaque repudiandae eveniet voluptatum debitis labore numquam architecto, fuga eum est deserunt doloremque dolores ea odit porro exercitationem molestias. Earum aliquam quos ducimus saepe optio, consequatur perspiciatis ad animi repudiandae! Corrupti reprehenderit ullam earum quas dolores quam, illo provident possimus recusandae. adipisicing elit. Magnam sapiente vero maxime nam totam velit? </p>
+    </div>
+        
+</body>
+</html>

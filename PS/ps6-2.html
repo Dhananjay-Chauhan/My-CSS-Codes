@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myweb</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navcontainer{
+            display: flex;
+            height: 10vh;
+            background-color: aqua;
+            
+        }
+        .img{
+            height: 55px;
+            width: 55px;
+            background-image: url('Images/bluenebula.jpg');
+            border-radius: 50%;
+            position: relative;
+            top: 2.5vh;
+            margin-right: 3vw;
+            margin-left: 5vw;
+        }
+        .img2{
+            background-image: url('Images/nightmoon.jpeg');
+            height: 50vh;
+            background-size: cover ;
+        }
+        .bar ul li{
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            top: 2.5vh;
+            margin: 1.5vh 60px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: pink;
+            height: 40vh;
+        }
+        .box1{
+            height: 20vh;
+            width: 15vw;
+            background-image: url('images/bluenebula.jpg');
+        }
+        .box2{
+            height: 20vh;
+            width: 15vw;
+            background-image: url('images/bluenebula.jpg');
+        }
+        .box3{
+            height: 20vh;
+            width: 15vw;
+            background-image: url('images/bluenebula.jpg');
+        }
+        
+        
+        footer{
+            text-align: center;
+            width: 100vw;
+            position: absolute;
+            bottom: 0%;
+            background-color: aqua;
+            color: rgb(55, 86, 189);
+
+        } 
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navcontainer">
+            <div class="img"></div>
+            <div class="bar">
+                <ul type="disc">
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="Dhananjay">Dhananjay</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                    <li><a href=" About">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="img2"></div>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <footer>
+        Copyright &copy; Made by - Dhananjay
+    </footer>
+</body>
+</html>

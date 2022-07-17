@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROTATING IMAGE</title>
+    <style>
+        .container{
+            /* use gradients like this  */
+            background-image: linear-gradient(#9896F0,#FBC8D5) ;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        img{
+            height: 25vh;
+            width: 15vw;
+            animation: rotate 1s ease-in 0s infinite normal;
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg) ;
+            }
+            100%{
+                transform: rotate(360deg) ;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Images/gojo.png" alt="i will kill u">
+    </div>
+</body>
+</html>

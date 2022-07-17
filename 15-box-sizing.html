@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box sizing</title>
+    <style>
+        .box{
+            background-color: green;
+            color: blue;
+            height: 550px;
+            width: 350px;
+            border: 5px solid black;
+            padding: 6px;
+        }
+        .box2{
+            background-color: rgb(14, 136, 167);
+            
+            height: 50px;
+            width: 100%;
+            padding: 5px;   
+            border: 5px solid black;
+            box-sizing: border-box ; /* if box-sizing is used with border box the height and width we put will alreay conatin the value of padding and margins. otherwise the default value is content box */
+            /* the content width & and height in border-box includes content + padding + margins */
+            /*remove the boxsizing and put it again to see the difference*/
+        }
+    </style>
+</head>
+<body>
+    <!-- one div can be put inside another div -->
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam cum illo nulla laboriosam asperiores fuga voluptas, delectus nisi aliquam perferendis voluptatibus! Fuga repellendus beatae distinctio accusantium ratione voluptas, similique atque doloribus quisquam cumque quos. Laboriosam illum saepe sapiente, dolor quod voluptatem placeat aut, amet voluptatum assumenda eius aperiam illo perferendis!  </p>
+        <div class="box2">
+        
+        </div>
+    </div>
+    
+</body>
+</html>

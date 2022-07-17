@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        #model1{
+            height: 250px;
+            width: 220px;
+            background-color: skyblue;
+            color: blue;
+            border: 5px solid rebeccapurple;
+            margin: 10px;
+            padding: 10px;
+        }
+        #model2{
+            height: 270px;
+            width: 230px;
+            background-color: rgb(33, 219, 64);
+            color: rgb(201, 48, 155);
+            border-width: 10px;
+            border-style: dashed;
+            border-color: tomato;
+            margin: 9px 8px 7px 6px; /* the order of margins is top right bottom left in clockwise direction*/
+        }
+        /* fro using two values like 5px 2px  ... the 5px is for top & bottom while 2px is for left and rigth. 
+            ..... u can also assign margins individually by usind command like margin-left:10px;   etc.*/
+        .con{
+            height: 270px;
+            width: 230px;
+            background-color: rgb(219, 200, 33);
+            color: rgb(206, 117, 179);
+            border-width: 10px;
+            border-style: dashed dotted none solid;
+            border-color: rgb(71, 105, 255);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="model1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, quaerat provident. Rerum neque reprehenderit iusto vitae error labore tempore doloremque blanditiis. Magnam culpa amet consequuntur ratione, doloremque vel quo accusamus deserunt magni eligendi iure necessitatibus? Quaerat cumque rem doloremque unde, corporis saepe dolorum, tempora dolore, illum placeat modi explicabo. Repellendus.</p>
+
+    </div>
+    <div id="model2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati omnis, possimus quis sit provident eum tempora, temporibus veniam assumenda, debitis numquam ea commodi enim dignissimos vel! Sint adipisci deleniti, aperiam nemo impedit ipsam? Rem corporis quas rerum quos, nisi atque delectus hic voluptatem vel accusamus laudantium facere illo doloremque perferendis, excepturi earum, eligendi eius?</p>
+    </div>
+    <div class="con">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure porro labore animi consequatur quis quo sit mollitia minima illo incidunt? Sit, ex aliquam. Impedit excepturi autem recusandae unde? Sint dolorem nihil quidem impedit cumque labore ipsa odit quaerat voluptatibus. Mollitia possimus commodi, reprehenderit laborum tempora eveniet. Sit porro nisi iste officiis.</p>
+    </div>
+</body>
+</html>

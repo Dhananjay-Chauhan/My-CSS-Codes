@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS</title>
+    <style>
+        /* USE MDN REFERENCE FOR MORE DETAILS */
+        .container{
+            background-color: aqua;
+            height: 100vh;
+            width: 100vw;
+
+        }
+        img{
+            height: 25vh;
+            width: 15vw;
+            animation-name: dimensionanimate;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction: normal;
+
+
+        }
+        @keyframes dimensionanimate{
+            from{
+                height: 25vh;
+                width: 15vw;
+            }
+            to{
+                height: 50vh;
+                width: 50vw;                
+            }
+        }
+        
+        .box1{
+            height: 25vh;
+            width: 15vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+            animation-name: dimensionanimate2;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s; /* delay in animatoin */
+            animation-iteration-count: 4; /* no. of times you want to see animations */
+            animation-direction: alternate-reverse ;   /* see by working */
+
+
+        }
+        @keyframes dimensionanimate2{
+            from{
+                height: 25vh;
+                width: 15vw;
+            }
+            to{
+                height: 50vh;
+                width: 50vw;                
+            }
+        }
+        .box2{
+            height: 25vh;
+            width: 15vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(114, 204, 152);
+            animation: dimensionanimate3 3s ease-in-out 1s 3 normal ;
+        }
+        @keyframes dimensionanimate3{
+            0%{   /* percentage of the progress of the animation. */
+                height: 25vh;
+                width: 15vw;
+            }
+            50%{
+                height: 10vh;
+                width: 5vw;                
+            }
+            100%{
+                height: 50vh;
+                width: 50vw;                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Images/gojo.png" alt="">
+        <div class="box1">
+            I am box - 1 .
+        </div>
+        <div class="box2">
+            I am box - 2 .
+        </div>
+    </div>
+</body>
+</html>
